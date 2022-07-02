@@ -1,0 +1,10 @@
+
+    C082 is a ptr to array of things
+    Func_2E78
+
+    +00 | w | ?
+    +02 | w | vram bank
+    +04 | w | vram addr
+    +06 | w | data bank
+    +08 | w | data addr
+    +0A | w | data length

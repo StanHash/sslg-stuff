@@ -1,0 +1,32 @@
+
+    this is all used by portraits
+
+IN ROM
+    26:4000 : entries of 4 bytes
+
+    +00 | w | some addr of ptr array
+    +02 | b | some x position/offset
+    +03 | b | ROM bank of ptr array
+
+    ptr array points to data of following layout
+
+    +00 | b | object count
+    +01 | b | discarded?
+    +02 | object entries
+
+    object entry (size = 5)
+
+    +00 | b | object y offset
+    +01 | b | object x offset
+    +02 | b | object x offset (when flipped)
+    +03 | b | object tile number
+    +04 | b | object attributes
+
+IN RAM
+    C700 is buf
+    DB00 is array
+
+    +00 | b | bool enabled
+    +01 | w | offset?
+    +03 | w | offset?
+    +05 | b | bool enabled also?

@@ -1,0 +1,52 @@
+(doc.feuniverse.us preserved this thing. Hurray!)
+
+0xb214=Leaf's strength in Bootleg Emblem RAM
+then skill, move, speed, defense, resistance
+before strength is exp
+
+STAT ORDER: Starts at 0xB20E for Leaf. Current HP, max HP, current SP, max SP, level, exp, strength, skill, movement, speed, defense, resistance...
+Char ID is at 0xB205, followed by class.
+Items start at 0xB22E. Item ID, then a mysterious byte of something. Six slots for items.
+Followed up by skills at 0xB23A.
+equips: 0xB221. Weapon-???-space-item-???-space. ???=type, maybe?
+
+(I really should have taken more notes.)
+
+GRAPHICS:
+Being a bootleg, a lot of weird stuff is scattered around the rom.
+They may also be displayed in some strange format. Better take those down too.
+0x8000 - some brief hex font, normal
+0x29000 - random Es floating, vertical
+0x50000 - Opening crawl, normal
+0x5C85C - weird numbers, 01-14, NES x16
+0x61000 - WIN/LOSE/ROUND 1-9, almost certainly some other leftover, NES x16
+0x71D32 - some strange copyright screen remmnant, NES x16
+0x893B0 - title cards: "Chapter X" - NES x16
+0x8A8F0 - title cards: chapter names - NES x16
+0x8CA10 - vertical segments of title crawl, vertical
+0x8CCF0 - title screen: "FIRE EMBLEM", NES x16
+0x8CE40 - title screen: unused "PRESS START", NES x16
+0x8D000 - title screen: "NEW GAME", NES x16
+0x8D130 - title screen: "LOAD FILE", NES x16
+0x8D260 - title screen: "RESUME CH.", NES x16
+0x8F610 - PLAYER phase, vertical
+0x8F8A0 - ENEMY phase, vertical
+0x8FB60 - Item menu, vertical
+0xC1460 - Cursor and pointer hand, NES x16
+0xC14F0 - Portraits, vertical
+0xDD8B0 - Moving map sprites, NES x16
+0xE8080 - Standing map sprites, NES x8
+0xEC000 - Item names, normal
+0xF1A00 - Class names, normal
+0xF29C0 - Skill names, normal
+0xF4500 - Character names, normal
+0xF6840 - Skill names block 2, normal
+0xFBF40 - Status screen tiles, various
+0x11C000 - Base options, normal
+0x11D360 - File select, level up, some shop tiles, normal
+0x154000 - Font, NES x16
+
+0x1409A0 - Ch1 opening narration
+pointer at 140034/38
+altogether, the game uses 1,234 chinese characters
+1,264 characters when adding in the handful of latin ones pre-existing
